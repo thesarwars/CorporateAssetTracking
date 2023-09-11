@@ -11,22 +11,22 @@ class CompanyApi(serializers.ModelSerializer):
 class EmployeeApi(serializers.ModelSerializer):
     class Meta:
         model = Employees
-        fields = '_all_'
+        fields = '__all__'
         
         
 class RoleApi(serializers.ModelSerializer):
     class Meta:
         model = Role
-        fields = '_all_'
+        fields = '__all__'
         
         
 class AssetApi(serializers.ModelSerializer):
     class Meta:
         model = Assets
-        fields = '_all_'
+        fields = '__all__'
         
         
 class AssetTrackingApi(serializers.ModelSerializer):
     class Meta:
         model = AssetTrack
-        fields = '_all_'
+        fields = '__all__'
