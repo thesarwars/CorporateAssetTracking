@@ -29,3 +29,5 @@ Bingo...!!!
 
 # API Documentation URl (POSTMAN):
 https://documenter.getpostman.com/view/28624290/2s9YC2zDgR
+
+![APi Doc](/APi-doc.png)
