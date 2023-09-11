@@ -22,9 +22,9 @@ Bingo...!!!
 
 # Image Sample of POSTMAN
 
-![Asset Tracking](/media/AssetTrack.png)
+![Asset Tracking](/AssetTrack.png)
 
-![Employee](/media/Employee.png)
+![Employee](/Employee.png)
 
 
 # API Documentation URl (POSTMAN):
