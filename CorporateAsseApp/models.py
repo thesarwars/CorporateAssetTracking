@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+#company model
 class Company(models.Model):
     company_title = models.CharField(max_length=300)
     address = models.CharField(max_length=550, blank=True, null=True)
@@ -12,7 +13,8 @@ class Company(models.Model):
     
     class Meta:
         verbose_name_plural = 'Companies'
-    
+
+#assel model or table    
 class Assets(models.Model):
     title = models.CharField(max_length=350)
     details = models.TextField(blank=True, null=True)
@@ -43,7 +45,7 @@ class Employees(models.Model):
     class Meta:
         verbose_name_plural = 'Employees'
         
-        
+#Asset track here & multiple assets can be selected        
 class AssetTrack(models.Model):
     title = models.CharField(max_length=100)
     asset = models.ManyToManyField(Assets)
@@ -51,7 +53,7 @@ class AssetTrack(models.Model):
     condition_at_checkout = models.CharField(max_length=200, blank=True, null=True)
     condition_at_return = models.CharField(max_length=200, blank=True, null=True)
     checkout_at = models.DateField()
-    returned_at = models.DateField(blank=True, null=True)
+    returned_at = models.DateField(blank=True, null=True) # return time will select when product will be return or it can select first
     is_returned = models.BooleanField(default=False)
     
     def __str__(self):

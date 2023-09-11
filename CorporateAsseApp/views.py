@@ -12,7 +12,7 @@ import json
 def index(request):
     return HttpResponse('Hello Tahasin')
 
-
+#Get company info and create compoany here
 class CompanyView(viewsets.ViewSet):
     def get(self, request):
         try:
@@ -30,12 +30,13 @@ class CompanyView(viewsets.ViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-
+#create role here
 class RoleView(generics.ListCreateAPIView):
     queryset = Role.objects.all()
     serializer_class = RoleApi
     
-    
+
+#create employee here    
 class EmployeeView(viewsets.ViewSet):
     def get(self, request):
         try:
@@ -54,7 +55,7 @@ class EmployeeView(viewsets.ViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     
-    
+#create asset class    
 class AssetView(viewsets.ViewSet):
     def get(self, request):
         try:
@@ -73,7 +74,7 @@ class AssetView(viewsets.ViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     
-    
+#assest tracking class    
 class AssetTrackingView(viewsets.ViewSet):
     def get(self, request):
         try:

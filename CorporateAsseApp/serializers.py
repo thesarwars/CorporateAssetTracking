@@ -30,3 +30,12 @@ class AssetTrackingApi(serializers.ModelSerializer):
     class Meta:
         model = AssetTrack
         fields = '__all__'
+        depth = 2
+        
+        
+    # def __init__(self, *args, **kwargs):
+    #     super(AssetTrackingApi, self).__init__(*args, **kwargs)
+    #     request = self.context.get('request')
+    #     self.Meta.depth = 0
+    #     if request and request.method == 'GET':
+    #         self.Meta.depth = 1
