@@ -22,6 +22,10 @@ Bingo...!!!
 
 Image Sample of POSTMAN
 
-![Asset Tracking](Media/AssetTrack.png)
+![Asset Tracking](/Users/sarwars/Desktop/Test/AssetApp/Media/AssetTrack.png)
 
-![Employee](Media/Employee.png)
+![Employee](/Users/sarwars/Desktop/Test/AssetApp/Media/Employee.png)
+
+
+API Documentation URl (POSTMAN):
+https://documenter.getpostman.com/view/28624290/2s9YC2zDgR
