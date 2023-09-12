@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CorporateasseappConfig(AppConfig):
+class CorporateassetappConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "CorporateAsseApp"
+    name = "CorporateAssetApp"

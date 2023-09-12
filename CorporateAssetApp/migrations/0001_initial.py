@@ -82,7 +82,7 @@ class Migration(migrations.Migration):
                     "company_employee",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="CorporateAsseApp.company",
+                        to="CorporateAssetApp.company",
                     ),
                 ),
                 (
@@ -90,7 +90,7 @@ class Migration(migrations.Migration):
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="Employee_Role",
-                        to="CorporateAsseApp.role",
+                        to="CorporateAssetApp.role",
                     ),
                 ),
             ],
@@ -122,13 +122,13 @@ class Migration(migrations.Migration):
                 ("checkout_at", models.DateField()),
                 ("returned_at", models.DateField()),
                 ("is_returned", models.BooleanField(default=False)),
-                ("asset", models.ManyToManyField(to="CorporateAsseApp.assets")),
+                ("asset", models.ManyToManyField(to="CorporateAssetApp.assets")),
                 (
                     "employee",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="Assign_Assets",
-                        to="CorporateAsseApp.employees",
+                        to="CorporateAssetApp.employees",
                     ),
                 ),
             ],
@@ -142,7 +142,7 @@ class Migration(migrations.Migration):
             field=models.ForeignKey(
                 on_delete=django.db.models.deletion.CASCADE,
                 related_name="Company_Asset",
-                to="CorporateAsseApp.company",
+                to="CorporateAssetApp.company",
             ),
         ),
     ]
